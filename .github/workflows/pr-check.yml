@@ -26,3 +26,6 @@ jobs:
   
             - name: run linting for all libraries in the workspace
               run: npm run lint
+
+            - name: run unit tests for all libraries in the workspace
+              run: npm run test -- --browsers ChromeHeadless --watch=false --source-map=false
